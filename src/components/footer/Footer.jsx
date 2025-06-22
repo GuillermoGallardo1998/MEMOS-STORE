@@ -1,5 +1,8 @@
 import "./Footer.css";
 
+import htmlIcon from "icons/html.png";
+import icoCss from "/icons/css.png";
+
 export default function Footer() {
   return (
     <section className="footer">
@@ -7,9 +10,9 @@ export default function Footer() {
         <div className="footer-tecnologias">
             <p className="footer-tecnologias-title">Technology that Brings This Experience to Life</p>
             <div className="footer-tecnologias-icones">
-                <img className="footer-tecnologias-icon" src="icons/html.png" alt="logo html 5"/>
-                <img className="footer-tecnologias-icon" src="icons/css.png" alt="logo css"/>
-                <img className="footer-tecnologias-icon" src="icons/js.png" alt="logo javascript" />
+                <img className="footer-tecnologias-icon" src={htmlIcon} alt="logo html 5"/>
+                <img className="footer-tecnologias-icon" src={icoCss} alt="logo css"/>
+                <img className="footer-tecnologias-icon" src="/MEMOS-STORE/icons/js.png" alt="logo javascript" />
                 <img className="footer-tecnologias-icon" src="icons/git.png" alt="logo git" />
                 <img className="footer-tecnologias-icon" src="icons/react.png" alt="logo react"/>
                 <img className="footer-tecnologias-icon" src="icons/Vite.png" alt="logo vite"/>
