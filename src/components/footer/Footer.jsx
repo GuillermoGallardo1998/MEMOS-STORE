@@ -12,7 +12,7 @@ export default function Footer() {
             <div className="footer-tecnologias-icones">
                 <img className="footer-tecnologias-icon" src={htmlIcon} alt="logo html 5"/>
                 <img className="footer-tecnologias-icon" src={icoCss} alt="logo css"/>
-                <img className="footer-tecnologias-icon" src="/MEMOS-STORE/icons/js.png" alt="logo javascript" />
+                <img className="footer-tecnologias-icon" src="/MEMOS-STORE/public/icons/js.png" alt="logo javascript" />
                 <img className="footer-tecnologias-icon" src="icons/git.png" alt="logo git" />
                 <img className="footer-tecnologias-icon" src="icons/react.png" alt="logo react"/>
                 <img className="footer-tecnologias-icon" src="icons/Vite.png" alt="logo vite"/>
