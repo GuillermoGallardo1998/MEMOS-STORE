@@ -18,7 +18,7 @@
 .cardContainer {
     width: 100%;
     max-width: clamp(280px, 90vw, 370px);
-    min-height: clamp(600px, 85vh, 750px);
+    min-height: clamp(600px, 85vw, 750px);
     height: auto;
     display: flex;
     flex-direction: column;
@@ -31,7 +31,7 @@
 
 .skeleton-img {
     width: 100%;
-    height: clamp(250px, 40vw, 410px);
+    height: 400px;
     background-color: var(--color-secundario);
     animation: pulse 1.5s infinite ease-in-out;
 }
@@ -45,8 +45,7 @@
 
 .cardContainer-img {
     width: 100%;
-    max-width: clamp(250px, 90vw, 370px);
-    height: clamp(220px, 100vw, 410px);
+    height: 400px;
     cursor: pointer;
     transition: opacity 0.5s ease;
 }
