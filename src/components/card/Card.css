@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+:root {
+  --color-primario: white;
+  --color-secundario: #393E46;
+  --color-terciario: #37B7C3;
+  --color-hover: #EB455F;
+  --color-texto: black;
+}
+
+.cardContainer {
+    width: 100%;
+    max-width: clamp(280px, 90vw, 370px);
+    min-height: clamp(600px, 85vh, 750px);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(0.8rem, 2vw, 1rem);
+    background-color: var(--color-primario);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 1);
+}
+
+.skeleton-img {
+    width: 100%;
+    height: clamp(250px, 40vw, 410px);
+    background-color: var(--color-secundario);
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.4; }
+    100% { opacity: 1; }
+}
+
+
+.cardContainer-img {
+    width: 100%;
+    max-width: clamp(250px, 90vw, 370px);
+    height: clamp(220px, 100vw, 410px);
+    cursor: pointer;
+    transition: opacity 0.5s ease;
+}
+
+.cardContainer-img:hover {
+    opacity: 0.8;
+}
+
+.cardContainer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.cardContainer-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cardContainer-info_title {
+    font-weight: bold;
+    font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+    text-align: center;
+    margin: 0 10px;
+}
+
+.cardContainer-info_description {
+    font-size: 1rem;
+    text-align: center;
+    min-height: 120px;
+    padding: 0 12px;
+}
+
+.cardContainer-info_price {
+    font-weight: bold;
+    font-size: clamp(1.1rem, 2.2vw, 1.3rem);
+}
+
+.cardContainer-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 0 20px;
+    background-color: rgb(206, 205, 205);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+    
+.cardContainer-button_lot {
+    all: unset;
+    width: clamp(2.5rem, 5vw, 3rem);
+    height: clamp(1.5rem, 3.5vw, 2rem);
+    font-weight: bold;
+    font-size: clamp(1.6rem, 4vw, 2rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.cardContainer-button_lot:hover {
+    background-color: var(--color-hover);
+}
+
+.cardContainer-button_quantity {
+    all: unset;
+    height: 2rem;
+    text-align: center;
+}
+
+.cardContainer-add {
+    width: 100%;
+    height: clamp(2.5rem, 5vw, 3rem);
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--color-primario);
+    background-color: var(--color-secundario);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.cardContainer-add:hover {
+    background-color: var(--color-terciario);
+}
+
+.cardContainer-add:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+

@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+:root {
+  --color-primario: white;
+  --color-secundario: #393E46;
+  --color-terciario: #37B7C3;
+  --color-hover: #EB455F;
+  --color-texto: black;
+}
+
+.purchaseHistory {
+  padding: 2rem;
+  width: 100%;
+  min-height: 92vh;
+  display: flex;
+  border-top: 4px solid var(--color-secundario);
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: linear-gradient(-45deg, #7e0c0c, #3b0000, #8b0000, #2b0000);
+  background-size: 400% 400%;
+  animation: sangriento 10s ease infinite;
+}
+
+@keyframes sangriento {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.purchaseHistory-noun {
+  font-size: clamp(1.2rem, 2vw, 1.8rem);
+  color: var(--color-primario);
+  text-align: center;
+}
+
+
+.purchaseHistory-title {
+  font-size: clamp(1.6rem, 5vw, 2.5rem);
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--color-primario);
+  text-shadow: 1px 1px 4px #000;
+}
+
+.purchaseHistory-record {
+  width: 700px;
+  background-color: var(--color-secundario);
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 16px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.8);
+  color: var(--color-primario);
+}
+
+.purchaseHistory-record-title {
+  margin-bottom: 1rem;
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  font-weight: bold;
+}
+
+.purchaseHistory-record-idDate,
+.purchaseHistory-record-items {
+  font-size: 1.2rem;
+}
+
+.purchaseHistory-record-items {
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+}
+
+.purchaseHistory-record-items li {
+  list-style: disc;
+  margin-bottom: 0.25rem;
+}
+
+.purchaseHistory-record-summary {
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .purchaseHistory-record {
+    width: 100%;
+  }
+}
